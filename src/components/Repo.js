@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import { Col, Row, Typography, Space, Card, Tag } from 'antd';
+import { Col, Row, Typography, Tag } from 'antd';
 
 const { Text, Title } = Typography;
 
@@ -17,7 +17,11 @@ const Repo = ({ repo }) => {
   return (
     <Row>
       <Col span={6}>
-        <img style={{ height: '20%' }} src={avatar_url} alt='avatar' />
+        <img
+          style={{ height: '20%', borderRadius: '50%' }}
+          src={avatar_url}
+          alt='avatar'
+        />
       </Col>
       <Col span={12}>
         <Row gutter={[0, 24]}>

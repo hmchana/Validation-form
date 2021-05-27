@@ -1,10 +1,4 @@
-import React, {
-  useEffect,
-  useState,
-  useRef,
-  useCallback,
-  forwardRef
-} from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import Loader from 'react-loader-spinner';
 import axios from 'axios';
 import Repo from './Repo';
@@ -58,8 +52,6 @@ const Repos = () => {
     // eslint-disable-next-line
   }, [pageNumber]);
 
-  console.log(repos);
-
   const Repos = repos.map((repo, index) => {
     if (repos.length === index + 1) {
       return (
@@ -71,7 +63,7 @@ const Repos = () => {
       );
     } else {
       return (
-        <div key={repo.id}>
+        <div key={repo.id} style={{ margin: '50px' }}>
           <Card style={{ width: 600, height: 300 }}>
             <Repo repo={repo} />
           </Card>
