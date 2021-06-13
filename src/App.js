@@ -1,10 +1,10 @@
 import React from 'react';
-import Repos from './components/Repos';
+import Form from './components/Form';
 
 const App = () => {
   return (
     <div>
-      <Repos />
+      <Form />
     </div>
   );
 };
